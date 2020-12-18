@@ -1,0 +1,9 @@
+numpy
+matplotlib
+seaborn
+pandas
+scikit-learn
+torch
+torchvision
+tqdm
+xlrd==1.2.0

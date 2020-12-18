@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  pytorch:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/root/workspace/
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    stdin_open: true
